@@ -20,7 +20,6 @@ catch {
     Write-Warning "User could not be found because Active Directory does not exist."
 }
 $user = "Logged On $(get-date) as $((Get-Item env:\username).Value) on computer $((Get-Item env:\Computername).Value)"
-Write-Host ""
 $user
 Write-Host ""
 Write-Host "User           :" $env:USERNAME
