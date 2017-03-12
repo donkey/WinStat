@@ -31,7 +31,7 @@ Write-Host "Roamingprofile :" $env:USERDOMAIN_ROAMINGPROFILE
 Write-Host "Userprofile    :" $env:USERPROFILE
 Write-Host "LogonServer    :" $env:LOGONSERVER
 
-(Get-WmiObject win32_networkadapterconfiguration -filter "ipenabled = 'True'" -ComputerName localhost | Select PSComputername,
+(Get-WmiObject win32_networkadapterconfiguration -filter "ipenabled = 'True'" -ComputerName $windows.Machine | Select PSComputername,
 @{Name = "IPAddress";Expression = {
 [regex]$ipv4 = "(\d{1,3}(\.?)){4}"
 $ipv4.matches($_.IPAddress).Value}},MACAddress)
