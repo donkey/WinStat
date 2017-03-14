@@ -1,8 +1,8 @@
 # WinStat
 A powershell script it provide information about current client connection status
 
-Use cmd:<br>
+<b>Use cmd:</b><br>
  powershell.exe -command "& ""%USERPROFILE%\Downloads\WinStat.ps1"""
 
-Use PS:<br>
+<b>Use PS:</b><br>
  ./WinStat.ps1
