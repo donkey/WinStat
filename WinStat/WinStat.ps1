@@ -11,8 +11,8 @@ $windows = [PSCustomObject]@{
 	Domain = [Environment]::UserDomainName
 	Machine = [Environment]::MachineName
 }
-"{0}  ({1})" -f $windows.Caption, $windows.Version
-
+$winver = "{0}  ({1})" -f $windows.Caption, $windows.Version
+$winver
 try {
     (Get-ADUser $env:USERNAME)
 }
@@ -21,16 +21,16 @@ catch {
 }
 $user = "Logged On $(get-date) as $((Get-Item env:\username).Value) on computer $((Get-Item env:\Computername).Value)"
 $user
-Write-Host ""
-Write-Host "User           :" $env:USERNAME
-Write-Host "SID            :" $env:USERSID
-Write-Host "Home path      :" $env:HOMEPATH
-Write-Host "Computer       :" $env:COMPUTERNAME
-Write-Host "AD Domain      :" $env:USERDOMAIN
-Write-Host "Roamingprofile :" $env:USERDOMAIN_ROAMINGPROFILE
-Write-Host "Userprofile    :" $env:USERPROFILE
-Write-Host "LogonServer    :" $env:LOGONSERVER
-
+Write-Host "
+User           : $env:USERNAME
+SID            : $env:USERSID
+Home path      : $env:HOMEPATH
+Computer       : $env:COMPUTERNAME
+AD Domain      : $env:USERDOMAIN
+Roamingprofile : $env:USERDOMAIN_ROAMINGPROFILE
+Userprofile    : $env:USERPROFILE
+LogonServer    : $env:LOGONSERVER
+"
 (Get-WmiObject win32_networkadapterconfiguration -filter "ipenabled = 'True'" -ComputerName $windows.Machine | Select PSComputername,
 	@{Name = "IPAddress";Expression = {
 	[regex]$ipv4 = "(\d{1,3}(\.?)){4}"
