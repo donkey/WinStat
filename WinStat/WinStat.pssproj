@@ -27,8 +27,6 @@
   </PropertyGroup>
   <ItemGroup />
   <ItemGroup>
-    <Compile Include="Script.ps1" />
-    <Compile Include="WinADStat.ps1" />
     <Compile Include="WinStat.ps1" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
