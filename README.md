@@ -11,7 +11,9 @@ A powershell script it provide information about current client connection statu
 ## Installation
 Download the script WinStat.ps1 and ran out from powershell console or open command prompt.
 Note, may it requires that you set execution policy.
-```sh Set-ExecutionPolicy remotesigned```
+```sh
+Set-ExecutionPolicy remotesigned
+```
 
 **Use cmd:**
  powershell.exe -command "& ""%USERPROFILE%\Downloads\WinStat.ps1"""
