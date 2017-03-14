@@ -6,7 +6,6 @@ A powershell script it provide information about current client connection statu
 [![GitHub stars](https://img.shields.io/github/stars/donkey/WinStat.svg)](https://github.com/donkey/WinStat/stargazers)
 [![Github All Releases](https://img.shields.io/github/downloads/atom/atom/total.svg)](https://github.com/donkey/WinStat)
 [![AUR](https://img.shields.io/aur/license/yaourt.svg)](https://github.com/donkey/WinStat)
-[![AUR](https://img.shields.io/aur/license/yaourt.svg)](https://github.com/donkey/WinStat)
 
 ## Installation
 Download the script WinStat.ps1 and ran out from powershell console or open command prompt.
@@ -16,7 +15,9 @@ Set-ExecutionPolicy remotesigned
 ```
 
 **Use cmd:**
- powershell.exe -command "& ""%USERPROFILE%\Downloads\WinStat.ps1"""
+```sh
+powershell.exe -command "& ""%USERPROFILE%\Downloads\WinStat.ps1"""
+```
 
 **Use PS Console:**
  ./WinStat.ps1
