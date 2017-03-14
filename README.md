@@ -23,4 +23,4 @@ powershell.exe -command "& ""%USERPROFILE%\Downloads\WinStat.ps1"""
  ./WinStat.ps1
 
 ## Reference
-![Think Tank Blog](http://think.unblog.ch/winstat-user-status/)
+[Think Tank Blog](http://think.unblog.ch/winstat-user-status/)
