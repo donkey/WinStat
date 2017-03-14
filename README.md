@@ -1,6 +1,7 @@
 # WinStat
 A powershell script it provide information about current client connection status valuable often for admins.
 
+[![Travis](https://img.shields.io/travis/rust-lang/rust.svg)](https://github.com/donkey/WinStat)
 [![GitHub issues](https://img.shields.io/github/issues/donkey/WinStat.svg)](https://github.com/donkey/WinStat/issues)
 [![GitHub forks](https://img.shields.io/github/forks/donkey/WinStat.svg)](https://github.com/donkey/WinStat/network)
 [![GitHub stars](https://img.shields.io/github/stars/donkey/WinStat.svg)](https://github.com/donkey/WinStat/stargazers)
