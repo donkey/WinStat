@@ -1,8 +1,18 @@
 # WinStat
 A powershell script it provide information about current client connection status valuable often for admins.
 
-<b>Use cmd:</b><br>
+[![GitHub issues](https://img.shields.io/github/issues/donkey/WinStat.svg)](https://github.com/donkey/WinStat/issues)
+[![GitHub forks](https://img.shields.io/github/forks/donkey/WinStat.svg)](https://github.com/donkey/WinStat/network)
+[![GitHub stars](https://img.shields.io/github/stars/donkey/WinStat.svg)](https://github.com/donkey/WinStat/stargazers)
+[![Github All Releases](https://img.shields.io/github/downloads/atom/atom/total.svg)](https://github.com/donkey/WinStat)
+[![AUR](https://img.shields.io/aur/license/yaourt.svg)](https://github.com/donkey/WinStat)
+[![AUR](https://img.shields.io/aur/license/yaourt.svg)](https://github.com/donkey/WinStat)
+
+## Istallation
+Download the script WinStat.ps1 and ran out from powershell console or open command prompt.
+
+**Use cmd:**
  powershell.exe -command "& ""%USERPROFILE%\Downloads\WinStat.ps1"""
 
-<b>Use PS:</b><br>
+**Use PS Console:**
  ./WinStat.ps1
