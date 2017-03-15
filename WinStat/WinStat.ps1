@@ -11,6 +11,7 @@ $windows = [PSCustomObject]@{
 	Domain = [Environment]::UserDomainName
 	Machine = [Environment]::MachineName
 }
+Write-Host ""
 $winver = "{0}  ({1})" -f $windows.Caption, $windows.Version
 $winver
 try {
